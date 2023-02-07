@@ -2,7 +2,7 @@
     "name": "vue_redux",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "src/main.js",
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build"
@@ -17,6 +17,8 @@
         "@reduxjs/toolkit": "^1.9.2",
         "core-js": "^3.27.2",
         "redux": "^4.2.1",
-        "vue": "^3.2.47"
+        "redux-logger": "^3.0.6",
+        "vue": "^3.2.47",
+        "vue-router": "^4.1.6"
     }
 }
