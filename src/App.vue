@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>App Vue</h1>
+        <h1>App</h1>
         <button @click="addUser">Add user</button>
         <router-view></router-view>
     </div>

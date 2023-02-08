@@ -11,5 +11,19 @@ module.exports = defineConfig({
             ignored: /node_modules/,
             poll: 1000,
         },
+        plugins: [
+            {
+                apply: (compiler) => {
+                    compiler.hooks.done.tap('DonePlugin', () => {
+                        console.log('Compile is done !');
+                        setTimeout(() => {
+                            if (process.env.NODE_ENV === 'production') {
+                                process.exit(0);
+                            }
+                        });
+                    });
+                },
+            },
+        ],
     },
 });

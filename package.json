@@ -1,24 +1,24 @@
 {
     "name": "vue_redux",
     "version": "1.0.0",
-    "description": "",
-    "main": "src/main.js",
+    "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build"
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "@vue/cli-service": "^5.0.8"
+        "@vue/cli-service": "~5.0.0"
     },
     "dependencies": {
         "@reduxjs/toolkit": "^1.9.2",
-        "core-js": "^3.27.2",
+        "core-js": "^3.8.3",
+        "vue": "^3.2.13",
         "redux": "^4.2.1",
         "redux-logger": "^3.0.6",
-        "vue": "^3.2.47",
         "vue-router": "^4.1.6"
     }
 }
